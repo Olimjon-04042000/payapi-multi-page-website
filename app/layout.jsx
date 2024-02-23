@@ -6,15 +6,20 @@ const layout = ({ children }) => {
     <html>
       <body>
         <header>
-                <div>
-                <Link href="/"><img src="/logo.svg" alt="logo" /></Link>
-                <Link href="/pricing">Pricing</Link>
-                <Link href="/about">About</Link>
-                <Link href="/contact">Contact</Link>
-                </div>
+          <div className="container header--container">
+            <div className="nav">
+              <Link className="link" href="/">
+                <img src="/logo.svg" alt="logo" />
+              </Link>
+              <Link className="link" href="/pricing">Pricing</Link>
+              <Link className="link" href="/about">About</Link>
+              <Link className="link" href="/contact">Contact</Link>
+            </div>
+            <Link className="demo" href="">Schedule a Demo</Link>
+          </div>
         </header>
         {children}
-        </body>
+      </body>
     </html>
   );
 };
